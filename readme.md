@@ -7,7 +7,8 @@ I'm a complete newb to python so bear with
 * .btm files are "Batch to Memory" files run by the [Take Command](http://noahcoad.com/post/293/ultimate-windows-command-prompt-take-command) Windows command interpreter, and are mostly ancillary support until I figure out how to do more with python
 
 ## files
-### spell.py
+### commands
+#### spell.py
 command line app  
 calls google search spell check from command line
 
@@ -18,15 +19,18 @@ equivalent to: `py3 -c "from urltools import Google; import sys; print (Google()
 
 uses a normal google search page, meant for casual personal use only, for a supported technique, use [spelling content module](https://developers.google.com/shopping-search/v1/reference-content-module-spelling) api (which requires and api key).  The [SOAP spellcheck](http://www.actionscript.org/forums/showthread.php3?t=187859) api only does one word at a time instead of considering the entire search term.
 
-### urltools.py
+### libraries
+
+#### urltools.py
 library  
 various helpful url/html/link routines for stuff link downloading web pages, using google, and interacting with my blog
 
-### HtmlClipboard.py, win32clipboard_helper.py
+#### HtmlClipboard.py, win32clipboard_helper.py
 libraries  
 for working with the Windows clipboard, getting/setting HTML fragments or text
 
-### pyclip.btm
+### supporting
+#### pyclip.btm
 runs a python script with the clipboard contents as the input if an input isn't specified, and write the first line of standard output back to the clipboard  
 assumes (or edit file): py3 is an alias to python 3 runtime, scripts are in python 3, and scripts are in c:\code\py
 
