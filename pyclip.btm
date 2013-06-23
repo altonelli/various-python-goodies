@@ -1,0 +1,17 @@
+:: created by Noah Coad on 2013-06-23 02:09am
+::
+:: runs a python script using the clipboard contents if not specified
+:: then sets the clipboard with the first line of the standard output
+::
+:: may want to move this to a python script to keep it all in python
+:: and write the entire output to the clipboard, not just the first line
+::
+:: also assumes using Python 3 and scripts are in c:\code\py
+
+set inclip=%@clip[0]
+if not "%2"=="" set inclip=%2
+echo in: %inclip
+set outclip=%@execstr[py3 c:\code\py\%1.py %@quote[%inclip]]
+echo out: %outclip
+if not %@clipw[%outclip] eq 0 (echo error setting clipboard %+ pauseconsole)
+
