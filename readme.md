@@ -9,7 +9,7 @@ I'm a complete newb to python so bear with
 ## files
 ### spell.py
 command line app  
-calls google spell check from command line
+calls google search spell check from command line
 
 example: py3 spell "john sculzi"  
 outputs: john scalzi
